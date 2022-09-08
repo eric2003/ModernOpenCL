@@ -23,6 +23,7 @@ cmake_print_variables( OpenCL_LIBRARY )
 
 list ( APPEND PRJ_INCLUDE_DIRS ${OpenCL_INCLUDE_DIRS} )
 list ( APPEND PRJ_LIBRARIES OpenCL::OpenCL )
+#message( STATUS "PRJ_INCLUDE_DIRS=${PRJ_INCLUDE_DIRS}" )
 
 get_directory_property( my_system_targets DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR} BUILDSYSTEM_TARGETS )
 get_directory_property( my_import_targets DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR} IMPORTED_TARGETS )
